@@ -11888,3 +11888,7 @@ footer {
 footer p {
   margin: 0px;
 }
+
+.card-title {
+  text-align: center;
+}

@@ -31,7 +31,7 @@
               <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="labsolutions.php">Lab Solutions</a>
+              <a class="nav-link" href="viewallbooks.php">My Books</a>
             </li>
           </ul>
           <div class="navbar-nav">
