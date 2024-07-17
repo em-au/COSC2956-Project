@@ -8,14 +8,14 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Create variables for user inputs
-        $email = $_POST['email'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
 
         // Escape special characters in a string 
         $email = mysqli_real_escape_string($conn, $email);
 
         // Create a SQL query to retrieve the user's info from the db
-        $sql = "SELECT * FROM client_info WHERE email = '$email'";
+        $sql = "SELECT * FROM users WHERE username  = '$username'";
         // Execute the query and check for success
         $result = mysqli_query($conn, $sql);
         if ($result) {
@@ -26,6 +26,7 @@
                 // Set session variables indicating logged in and username
                 $_SESSION['auth'] = 1;
                 $_SESSION['username'] = $row['username'];
+                $_SESSION['user_id'] = $row['id'];
                 header('location: /');
             }
             else {

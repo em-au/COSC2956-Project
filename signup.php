@@ -23,7 +23,7 @@
         if (mysqli_query($conn, $sql)) {
             $_SESSION['auth'] = 1;
             $_SESSION['username'] = $username;
-            // probably need to grab the user id 
+            // probably need to grab the user id  !!!!!!!!!!!!
             header('location: /');
         } else {
             echo "Error: " . mysqli_error($conn);

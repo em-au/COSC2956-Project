@@ -6,21 +6,16 @@
 <br><br><br><br>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <!-- FORM - NEED TO CHANGE THE ACTION -->
+        <div class="col-md-4">
+
             <form method="POST" action="login.php" class="row g-3">
-                <div class="form-group row">
-                    <label for="inputEmail4" class="col-form-label col-2">Email</label>
-                    <div class="col-10">
-                        <input type="email" class="form-control" id="inputEmail4" name="email" required>
-                    </div>
+                <div class="col-md-12">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
                 </div>
-                <br><br>
-                <div class="form-group row">
-                    <label for="inputPassword" class="col-form-label col-2">Password</label>
-                    <div class="col-10">
-                        <input type="password" class="form-control" id="inputPassword" name="password" required>
-                    </div>
+                <div class="col-md-12">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Login</button>
