@@ -9,7 +9,7 @@
     if (!isset($_SESSION['auth'])) {
         echo "You are not signed in";
     }
-    echo "termproject";
+    echo "test";
 ?>
 
 <?php require_once 'includes/footer.php' ?>
