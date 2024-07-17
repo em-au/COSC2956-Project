@@ -1,5 +1,5 @@
     <footer>
-        <p>© 2024 Emily Au</p>
+        <p>© Emily Au 2024</p>
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

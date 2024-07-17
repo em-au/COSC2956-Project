@@ -9,7 +9,8 @@
     if (!isset($_SESSION['auth'])) {
         echo "You are not signed in";
     }
-    echo "test";
 ?>
+
+<a href="addbookform.php">Add a book</a>
 
 <?php require_once 'includes/footer.php' ?>
