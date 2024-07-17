@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-secondary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Algoma University</a>
+        <a class="navbar-brand" href="/">Book Tracker</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,16 +34,19 @@
               <a class="nav-link" href="labsolutions.php">Lab Solutions</a>
             </li>
           </ul>
-          <div class="nav-right">
+          <div class="navbar-nav">
             <?php if (isset($_SESSION['auth'])) { ?>
-              <a href="#"><button type="button" class="btn btn-primary border-0 disabled">Sign up</button></a>
-              <a href="#"><button type="button" class="btn btn-primary border-0 disabled">Login</button></a>
-              <a href="logout.php"><button type="button" class="btn btn-primary border-0 ">Logout</button></a>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="logout.php">Logout</a>
+              </li>
             <?php } ?>
             <?php if (!isset($_SESSION['auth'])) { ?>
-              <a href="signupform.php"><button type="button" class="btn btn-primary border-0">Sign up</button></a>
-              <a href="loginform.php"><button type="button" class="btn btn-primary border-0 ">Login</button></a>
-              <a href="#"><button type="button" class="btn btn-primary border-0 disabled">Logout</button></a>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="signupform.php">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="loginform.php">Login</a>
+              </li>
             <?php } ?>
           </div>
         </div>

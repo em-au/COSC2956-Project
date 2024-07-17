@@ -1,3 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$cool-gray: #a09abc;
+$lilac: #b6a6ca;
+$lavender: #d5cfe1;
+$light-gray: #e1dee9;
+$brown: #d4bebe;
+
 html,
 body {
   height: 100%;
@@ -14,24 +21,24 @@ header {
   z-index: 1000;
 }
 
+.navbar {
+  background: $cool-gray;
+}
+
 .navbar-brand {
   color: white;
+  font-size: x-large;
 }
 
 .nav-link {
-  color: #6ec2f0;
-}
-
-.nav-right .btn {
-  color: black;
-  background-color: #6ec2f0;
+  color: white;
 }
 
 footer {
   margin-top: auto;
   width: 100%;
-  background-color: #505050;
-  color: white;
+  background-color: $light-gray;
+  color: black;
   text-align: center;
   position: absolute;
   bottom: 0;
