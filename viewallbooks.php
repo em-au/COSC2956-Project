@@ -12,19 +12,6 @@
 
         // Execute the SQL statement and get results
         $result = mysqli_query($conn, $sql); // $result contains either the result set object or false
-
-        // if ($result) {
-        //     while ($row = mysqli_fetch_assoc($result)) {
-        //         echo $row['title'] . "<br>";
-        //     }
-        //     // foreach ($rows as $book) {
-        //     //     print_r($book);
-        //     //     echo "\n\n TEST: ";
-        //     //     echo $book[2];
-        //     //     echo $book['author'];
-        //     // }
-        // }
-
 ?>
 
 <!-- Display message if no books -->
