@@ -3,6 +3,9 @@
     require_once 'includes/header.php';
     require_once 'db/conn.php'; 
     session_start();
+    if (!isset($_SESSION['auth'])) {
+        header('location: /loginform.php');
+    }
 ?>
 
 <?php 
