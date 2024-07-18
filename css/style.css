@@ -11853,6 +11853,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: auto;
+  min-width: fit-content;
 }
 
 header {
@@ -11937,8 +11939,9 @@ h2.centered, .centered.h2 {
   justify-content: center;
   align-items: center;
   background-color: #d5cfe1;
-  padding: 30px;
   height: 100vh;
+  min-width: fit-content;
+  min-height: 600px;
 }
 
 .banner-image {
