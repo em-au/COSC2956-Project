@@ -24,7 +24,7 @@
             <div class="dropdown">
                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" 
                     data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                    Filter
+                    Read
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="viewallbooks.php">All</a></li>
