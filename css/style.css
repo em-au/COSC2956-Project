@@ -11890,6 +11890,10 @@ footer p {
   margin: 0px;
 }
 
+h2, .h2 {
+  color: #6f5349;
+}
+
 .card-title {
   text-align: center;
 }
@@ -11899,7 +11903,7 @@ footer p {
 }
 
 .btn-primary {
-  background-color: #7d5d51;
+  background-color: #6f5349;
   border: none;
 }
 
@@ -11908,7 +11912,7 @@ footer p {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #664c43;
+  background-color: #553f37;
 }
 
 .btn-secondary {

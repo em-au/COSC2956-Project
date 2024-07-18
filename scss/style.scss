@@ -3,7 +3,7 @@ $cool-gray: #a09abc;
 $lilac: #b6a6ca;
 $lavender: #d5cfe1;
 $light-gray: #e1dee9;
-$brown: #7d5d51;
+$brown: #6f5349;
 
 html,
 body {
@@ -51,6 +51,10 @@ footer p {
   margin: 0px;
 }
 
+h2 {
+  color: $brown;
+}
+
 .card-title {
   text-align: center;
 }
@@ -69,7 +73,7 @@ footer p {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #664c43;
+  background-color: #553f37;
 }
 
 .btn-secondary {
