@@ -20,9 +20,23 @@
 <div class="container">
     <div class="d-flex justify-content-between align-items-center">
         <h2>My Books</h2>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
-                  Add
-        </button>
+        <div class="d-flex gap-2">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" 
+                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                    Filter
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="viewallbooks.php">All</a></li>
+                    <li><a class="dropdown-item" href="viewtoread.php">To read</a></li>
+                    <li><a class="dropdown-item disabled" aria-disabled="true">Currently reading</a></li>
+                    <li><a class="dropdown-item" href="viewread.php">Read</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                    Add
+            </button>
+        </div>
     </div>
     <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">

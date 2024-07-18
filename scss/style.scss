@@ -71,3 +71,12 @@ footer p {
 .open > .dropdown-toggle.btn-primary {
   background-color: #664c43;
 }
+
+.btn-secondary {
+  background-color: $lilac;
+  border: none;
+}
+
+.btn-outline-secondary {
+  border-color: $cool-gray;
+}
