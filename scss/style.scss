@@ -88,3 +88,26 @@ h2.centered {
 .btn-outline-secondary {
   border-color: $cool-gray;
 }
+
+.btn-primary.home-button {
+  border-radius: 24px;
+}
+
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lavender;
+  padding: 30px;
+  height: 100vh;
+}
+
+.banner-image {
+  text-align: center;
+}
+
+.image-source a {
+  text-decoration: none;
+  font-size: 12px;
+  color: $brown;
+}
