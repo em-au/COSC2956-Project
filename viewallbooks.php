@@ -27,8 +27,26 @@
                             <h5 class="card-title"> <?php echo $row['title'] ?></h5>
                             <p class="card-text">
                                 Author: <?php echo $row['author'] ?></p>
-                            <i><?php echo $row['status'] ?></i>
-                            <p><a href="deletebook.php?id=<?php echo $row['id']?>" class="btn btn-primary">Delete</a></p>
+                            <!-- <i><?php echo $row['status'] ?></i> -->
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-secondary"><i><?php echo $row['status'] ?></i></button>
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" 
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="marktoread.php?id=
+                                        <?php echo $row['id']?>">To read</a></li>
+                                    <li><a class="dropdown-item" href="markcurrentlyreading.php?id=
+                                        <?php echo $row['id']?>">Currently reading</a></li>
+                                    <li><a class="dropdown-item" href="markread?id=
+                                        <?php echo $row['id']?>">Read</a></li>
+                                </ul>
+                            </div>
+
+                            <div><a href="deletebook.php?id=<?php echo $row['id']?>" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash" style="color: #a09abc;"></i></a></div>
                         </div>
                     </div>
                 </div>
