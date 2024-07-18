@@ -6,9 +6,9 @@
 ?>
 
 <?php 
-    // SQL statement to retrieve all books for a user
+    // SQL statement to retrieve read books for a user
     $user_id = $_SESSION['user_id'];
-    $sql = "SELECT * FROM books WHERE user_id = $user_id";
+    $sql = "SELECT * FROM books WHERE user_id = $user_id AND status = 'Read'";
 
         // Execute the SQL statement and get results
         $result = mysqli_query($conn, $sql); // $result contains either the result set object or false
@@ -24,11 +24,6 @@
                   Add
         </button>
     </div>
-
-    <a href="viewtoread.php">To read</a>
-    <a href="viewcurrent.php">Currently reading</a>
-    <a href="viewread.php">Read</a>
-
     <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php // Iterate through the user's books
