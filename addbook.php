@@ -23,7 +23,7 @@
                 VALUES ('$user_id', '$title', '$author', '$status')";
         // Execute the query and check for success
         if (mysqli_query($conn, $sql)) {
-            header('location: /');
+            header('location: viewallbooks.php');
         } else {
             echo "Error: " . mysqli_error($conn);
         }

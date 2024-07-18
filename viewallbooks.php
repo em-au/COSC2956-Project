@@ -18,6 +18,13 @@
 
 <br><br>
 <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>My Books</h2>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                  Add
+        </button>
+    </div>
+    <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php // Iterate through the user's books
             while ($row = mysqli_fetch_assoc($result)) { ?>
@@ -50,5 +57,50 @@
             <?php } ?>
     </div>
 </div>
+
+<!-- Modal to add a book -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Book</h1>
+      </div>
+      <div class="modal-body">
+          <form action="addbook.php" method="POST">
+          <fieldset>
+              <div class="form-group" style="text-align: left">
+                <div>
+                    <label for="Title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <br>
+                <div>
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="author" name="author" required>
+                </div>
+                <br>
+                <div>
+                    <label for="status" class="form-label">Status</label>
+                    <select id="status" class="form-select" name="status" required>
+                    <option value="" selected disabled>Choose...</option>
+                    <option>To read</option>
+                    <option>Currently reading</option>
+                    <option>Read</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+              <div style="text-align: right">
+              <a href="viewallbooks.php"><button type="button" class="btn btn-light">Cancel</button></a>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </fieldset>
+          </form> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <?php require_once 'includes/footer.php' ?>
