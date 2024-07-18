@@ -29,7 +29,7 @@
         <?php // Iterate through the user's books
             while ($row = mysqli_fetch_assoc($result)) { ?>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title"> <?php echo $row['title'] ?></h5>
                             <p class="card-text">

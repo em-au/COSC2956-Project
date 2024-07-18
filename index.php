@@ -11,6 +11,4 @@
     }
 ?>
 
-<a href="addbookform.php">Add a book</a>
-
 <?php require_once 'includes/footer.php' ?>
