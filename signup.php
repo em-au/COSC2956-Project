@@ -23,7 +23,16 @@
         if (mysqli_query($conn, $sql)) {
             $_SESSION['auth'] = 1;
             $_SESSION['username'] = $username;
-            // probably need to grab the user id  !!!!!!!!!!!!
+            // Create a SQL query to retrieve the new user's info from the db
+             $sql = "SELECT * FROM users WHERE username  = '$username'";
+                // Execute the query and check for success
+                $result = mysqli_query($conn, $sql);
+                if ($result) {
+                    $row = mysqli_fetch_array($result);
+                    $_SESSION['user_id'] = $row['id']; // Get user id from db
+                } else {
+                    echo "Error: " . mysqli_error($conn);
+                }
             header('location: /');
         } else {
             echo "Error: " . mysqli_error($conn);

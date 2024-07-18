@@ -11894,6 +11894,10 @@ h2, .h2 {
   color: #6f5349;
 }
 
+h2.centered, .centered.h2 {
+  text-align: center;
+}
+
 .card-title {
   text-align: center;
 }
