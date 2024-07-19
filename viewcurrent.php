@@ -43,7 +43,13 @@
     </div>
     <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <?php // Iterate through the user's books
+        <?php 
+            if ($result) { 
+                if (mysqli_num_rows($result) == 0) {
+                    echo "<i>You have no books marked as 'currently reading'</i><br><br>";
+                }
+            }
+            // Iterate through the user's books
             while ($row = mysqli_fetch_assoc($result)) { ?>
                 <div class="col">
                     <div class="card h-100 shadow-sm">

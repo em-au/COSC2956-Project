@@ -17,7 +17,7 @@
         $result = mysqli_query($conn, $sql); // $result contains either the result set object or false
 ?>
 
-<!-- Display message if no books -->
+<!-- Display message if no books - see index.php -->
 
 <br><br>
 <div class="container">
@@ -44,7 +44,14 @@
 
     <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <?php // Iterate through the user's books
+        
+        <?php 
+            if ($result) { 
+                if (mysqli_num_rows($result) == 0) {
+                    echo "<i>You haven't added any books </i><br><br>";
+                }
+            }
+            // Iterate through the user's books
             while ($row = mysqli_fetch_assoc($result)) { ?>
                 <div class="col">
                     <div class="card h-100 shadow-sm">
