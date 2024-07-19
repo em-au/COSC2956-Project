@@ -16,7 +16,7 @@
         $username = mysqli_real_escape_string($conn, $username);
         $hashed_password = mysqli_real_escape_string($conn, $hashed_password);
 
-        // Check is username is already taken
+        // Check if username is already taken
         $sql = "SELECT * FROM users WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);

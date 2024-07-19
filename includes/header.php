@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="../pics/favicon.svg">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="../js/script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">

@@ -6,6 +6,7 @@
 ?>
 
 <?php
+    // Home page for user that is not logged in
     if (!isset($_SESSION['auth'])) { ?>
         <div class="container-fluid home-banner">
             <div class="banner-text">
@@ -19,6 +20,7 @@
             </div>
         </div>
     <?php }
+    // Home page for user that is logged in
     else if (isset($_SESSION['auth'])) { ?>
         <div class="container home-banner-white">
             <div class="banner-image">
@@ -32,7 +34,7 @@
                     $sql = "SELECT * FROM books WHERE user_id = $user_id AND status = 'Currently reading'";
 
                     // Execute the SQL statement and get results
-                    $result = mysqli_query($conn, $sql); // $result contains either the result set object or false
+                    $result = mysqli_query($conn, $sql); 
                     if ($result) { 
                         if (mysqli_num_rows($result) == 0) {
                             echo "<i>You have no books marked as 'currently reading'</i><br><br>";

@@ -1,8 +1,10 @@
 <?php 
-    $title = "Add a book";
+    $title = "Add Book";
     require_once 'includes/header.php';
+    session_start();
     if (!isset($_SESSION['auth'])) {
         header('location: /loginform.php');
+        die;
     } 
 ?>
 

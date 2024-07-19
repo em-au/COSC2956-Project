@@ -3,6 +3,10 @@
     require_once 'includes/header.php';
     require_once 'db/conn.php'; 
     session_start();
+    if (!isset($_SESSION['auth'])) {
+        header('location: /loginform.php');
+        die;
+    } 
 ?>
 
 <?php
@@ -29,7 +33,6 @@
 
         // Execute the query and check for success
         if (mysqli_query($conn, $sql)) {
-            //header('location: viewallbooks.php');
             header('Location: ' . $_SERVER['HTTP_REFERER']);
         } else {
             echo "Error: " . mysqli_error($conn);

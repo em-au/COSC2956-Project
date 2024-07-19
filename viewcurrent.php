@@ -5,6 +5,7 @@
     session_start();
     if (!isset($_SESSION['auth'])) {
         header('location: /loginform.php');
+        die;
     }
 ?>
 
@@ -14,10 +15,8 @@
     $sql = "SELECT * FROM books WHERE user_id = $user_id AND status = 'Currently reading'";
 
         // Execute the SQL statement and get results
-        $result = mysqli_query($conn, $sql); // $result contains either the result set object or false
+        $result = mysqli_query($conn, $sql);
 ?>
-
-<!-- Display message if no books -->
 
 <br><br>
 <div class="container">
@@ -123,7 +122,6 @@
     </div>
   </div>
 </div>
-
 
 
 <?php require_once 'includes/footer.php' ?>
