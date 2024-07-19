@@ -11934,6 +11934,11 @@ h2.centered, .centered.h2 {
   border-radius: 24px;
 }
 
+.btn-primary.home-button-sm {
+  border-radius: 24px;
+  font-size: 16px;
+}
+
 .home-banner {
   display: flex;
   justify-content: center;
@@ -11952,4 +11957,19 @@ h2.centered, .centered.h2 {
   text-decoration: none;
   font-size: 12px;
   color: #6f5349;
+}
+
+.home-banner-white {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: fit-content;
+  min-height: 600px;
+}
+
+.books-icon {
+  height: 300px;
+  width: auto;
 }
