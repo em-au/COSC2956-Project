@@ -9,6 +9,9 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <h2 class="centered">Sign up</h2>
+            <?php if (isset($_SESSION['username_taken'])) { ?>
+                <div class="error-msg text-center">Username already taken</div>
+            <?php unset($_SESSION['username_taken']); } ?>
             <form method="POST" action="signup.php" onsubmit="return checkPasswords()" class="row g-3">
                 <div class="col-md-12">
                     <label for="username" class="form-label">Username</label>

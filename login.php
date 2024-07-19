@@ -32,6 +32,7 @@
             else {
                $_SESSION['incorrect_login'] = 1;
                header('location: loginform.php');
+               die;
             }
         } else {
             echo "Error: " . mysqli_error($conn);
