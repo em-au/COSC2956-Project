@@ -8,6 +8,9 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <h2 class="centered">Login</h2>
+            <?php if (isset($_SESSION['incorrect_login'])) { ?>
+                <div class="error-msg text-center">Incorrect username or password</div>
+            <?php unset($_SESSION['incorrect_login']); } ?>
             <form method="POST" action="login.php" class="row g-3">
                 <div class="col-md-12">
                     <label for="username" class="form-label">Username</label>
