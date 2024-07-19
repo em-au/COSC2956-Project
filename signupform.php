@@ -31,7 +31,7 @@
             </form>
             <br>
             <div class="col-12 text-center">
-                    <a href="loginform.php">Already have an account? Login here.</a>
+                    <a href="loginform.php" class="link-blue">Already have an account? Login here.</a>
             </div>
         </div>
     </div>

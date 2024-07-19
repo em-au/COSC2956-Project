@@ -1,5 +1,5 @@
 <?php 
-    $title = "My Books";
+    $title = "My Books - Read";
     require_once 'includes/header.php';
     require_once 'db/conn.php'; 
     session_start();

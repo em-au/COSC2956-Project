@@ -11976,6 +11976,10 @@ h2.centered, .centered.h2 {
   color: #6f5349;
 }
 
+.link-blue {
+  color: #099fb6;
+}
+
 .error-msg {
   color: red;
 }

@@ -26,7 +26,7 @@
             </form>
             <br>
             <div class="col-12 text-center">
-                <a href="signupform.php">Don't have an account? Sign up here.</a>
+                <a href="signupform.php" class="link-blue">Don't have an account? Sign up here.</a>
             </div>
         </div>
     </div>
