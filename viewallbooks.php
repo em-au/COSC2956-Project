@@ -25,7 +25,7 @@
         <h2>My Books</h2>
         <div class="d-flex gap-2">
             <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" 
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
                     data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                     All
                 </button>

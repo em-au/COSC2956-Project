@@ -83,8 +83,16 @@ h2.centered {
 }
 
 .btn-secondary {
-  background-color: $lilac;
+  background-color: tan;
   border: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  background-color: rgb(185, 159, 125);
 }
 
 .btn-outline-secondary {
