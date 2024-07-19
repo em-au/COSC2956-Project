@@ -48,7 +48,7 @@
                         </div>
                     <?php }
                 ?>
-                <a href="viewallbooks.php"><button type="button" class="btn btn-primary btn-lg home-button">
+                <a href="viewallbooks.php"><button type="button" class="btn btn-primary btn-lg home-button mt-2">
                     See all books</button></a>
             </div>
             
