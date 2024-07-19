@@ -25,6 +25,7 @@
                     <label for="password_confirm" class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" id="passwordConfirm" name="password_confirm" required>
                 </div>
+                <div class="error-msg text-center" id="passwordMismatch"></div>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary pull-right">Sign up</button>
                 </div>
