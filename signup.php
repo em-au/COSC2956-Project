@@ -43,7 +43,7 @@
                 } else {
                     echo "Error: " . mysqli_error($conn);
                 }
-            header('location: /');
+            echo "<script>signupSuccess();</script>"; // Redirect to home page is done by JS function
         } else {
             echo "Error: " . mysqli_error($conn);
         }
