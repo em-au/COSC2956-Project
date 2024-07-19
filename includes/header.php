@@ -33,6 +33,9 @@
             <li class="nav-item">
               <a class="nav-link" href="viewallbooks.php">My Books</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.php">About</a>
+            </li>
           </ul>
           <div class="navbar-nav">
             <?php if (isset($_SESSION['auth'])) { ?>

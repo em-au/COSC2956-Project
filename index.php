@@ -16,7 +16,6 @@
             </div>
             <div class="banner-image">
                 <div><img src="pics/reading-book.png" alt="An illustration of a woman reading a book"></div>
-                <div class="image-source"><a href="https://www.flaticon.com/free-stickers/student" title="student stickers">Student stickers created by Stickers - Flaticon</a></div>
             </div>
         </div>
     <?php }
@@ -24,7 +23,6 @@
         <div class="container home-banner-white">
             <div class="banner-image">
                 <div><img src="pics/books.png" class="books-icon" alt="An illustration of books on a shelf"></div>
-                <div class="image-source"><a href="https://www.flaticon.com/free-stickers/reading" title="reading stickers">Reading stickers created by Stickers - Flaticon</a></div>
             </div>
             <div class="banner-text">
                 <h2>CURRENTLY READING</h2>
