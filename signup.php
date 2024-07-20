@@ -22,7 +22,7 @@
         $row = mysqli_fetch_array($result);
         if ($row) { // Username is taken because retrieved a result from db
             $_SESSION['username_taken'] = 1;
-            header('location: signupform.php');
+            header('location: /signupform.php');
             die;
         }
 
@@ -43,7 +43,8 @@
                 } else {
                     echo "Error: " . mysqli_error($conn);
                 }
-            echo "<script>signupSuccess();</script>"; // Redirect to home page is done by JS function
+            // Redirect to home page is done by JS function after showing success message in an alert
+            echo "<script>signupSuccess();</script>"; 
         } else {
             echo "Error: " . mysqli_error($conn);
         }

@@ -10,7 +10,7 @@
 ?>
 
 <?php 
-    // SQL statement to retrieve read books for a user
+    // SQL statement to retrieve books for a user
     $user_id = $_SESSION['user_id'];
     $sql = "SELECT * FROM books WHERE user_id = $user_id AND status = 'Read'";
 
@@ -24,7 +24,7 @@
         <h2>My Books</h2>
         <div class="d-flex gap-2">
             <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" 
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
                     data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                     Read
                 </button>

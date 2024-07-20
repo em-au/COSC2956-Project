@@ -43,8 +43,8 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="logout.php">Logout</a>
               </li>
-            <?php } ?>
-            <?php if (!isset($_SESSION['auth'])) { ?>
+            <?php } 
+            else if (!isset($_SESSION['auth'])) { ?>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="signupform.php">Sign up</a>
               </li>

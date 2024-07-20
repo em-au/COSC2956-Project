@@ -23,14 +23,14 @@
             $row = mysqli_fetch_array($result);
             $db_password = $row['password'];
             if (password_verify($password, $db_password)) {
-                // Set session variables indicating logged in and get user id
+                // Set session variables indicating user is logged in and get user id from db
                 $_SESSION['auth'] = 1;
                 $_SESSION['user_id'] = $row['id'];
                 header('location: /');
             }
             else {
                $_SESSION['incorrect_login'] = 1;
-               header('location: loginform.php');
+               header('location: /loginform.php');
             }
         } else {
             echo "Error: " . mysqli_error($conn);

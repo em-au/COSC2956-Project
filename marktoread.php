@@ -21,10 +21,8 @@
         $sql = "SELECT * FROM books WHERE id = $id";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
-        echo $row['user_id']; 
-        echo $_SESSION['user_id']; 
         if ($_SESSION['user_id'] != $row['user_id']) { 
-            header('location: viewallbooks.php');
+            header('location: /viewallbooks.php');
             die; 
         }
         

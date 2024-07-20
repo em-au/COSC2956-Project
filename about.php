@@ -16,7 +16,6 @@
         <li><a href="https://www.flaticon.com/free-stickers/reading" title="reading stickers" target="_blank">Reading stickers created by Stickers - Flaticon</a></li>
         <li><a href="https://www.flaticon.com/free-stickers/student" title="student stickers" target="_blank">Student stickers created by Stickers - Flaticon</a></li>
     </ul>
-
 </div>
 
 <?php require_once 'includes/footer.php' ?>

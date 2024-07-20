@@ -9,6 +9,8 @@ function checkPasswords() {
 }
 
 function signupSuccess() {
-  alert("Your account has been created!");
+  alert(
+    "Your account has been created! You will be redirected to your Home page."
+  );
   window.location.href = "index.php";
 }

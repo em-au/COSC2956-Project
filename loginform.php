@@ -20,6 +20,7 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
+                <span></span>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary">Login</button>
                 </div>

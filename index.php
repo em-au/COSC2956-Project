@@ -33,13 +33,14 @@
                     $user_id = $_SESSION['user_id'];
                     $sql = "SELECT * FROM books WHERE user_id = $user_id AND status = 'Currently reading'";
 
-                    // Execute the SQL statement and get results
+                    // Execute the SQL statement
                     $result = mysqli_query($conn, $sql); 
                     if ($result) { 
                         if (mysqli_num_rows($result) == 0) {
                             echo "<i>You have no books marked as 'currently reading'</i><br><br>";
                         }
                     }
+                    // Iterate through the books
                     while ($row = mysqli_fetch_assoc($result)) { ?> 
                         <div class="card mb-2">
                             <div class="card-body">
