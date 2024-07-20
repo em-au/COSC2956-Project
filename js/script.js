@@ -10,7 +10,7 @@ function checkPasswords() {
 
 function signupSuccess() {
   alert(
-    "Your account has been created! You will be redirected to your Home page."
+    "Your account has been created! \nYou will be redirected to your Home page."
   );
-  window.location.href = "index.php";
+  window.location.href = "/";
 }
